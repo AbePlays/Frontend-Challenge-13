@@ -1,6 +1,9 @@
 .top {
   display: flex;
-  height: 66vh;
+
+  @media (max-width: 1000px) {
+    display: block;
+  }
 
   .left {
     flex: 4;
@@ -9,6 +12,10 @@
     background-size: cover;
     padding-top: 3rem;
     padding-left: 3rem;
+
+    @media (max-width: 1000px) {
+      height: 400px;
+    }
 
     nav {
       color: white;
@@ -47,12 +54,16 @@
 
   .right {
     flex: 3;
-    padding: 6rem 7%;
+    padding: 6rem 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media (max-width: 1000px) {
+      padding: 4rem 5vw;
+    }
 
     h1 {
       font-size: 2.5rem;
@@ -86,6 +97,12 @@
       left: 0;
       bottom: 0;
       display: flex;
+
+      @media (max-width: 1000px) {
+        top: -4rem;
+        right: 0;
+        left: auto;
+      }
 
       .control {
         background-color: #000;

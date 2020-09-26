@@ -1,15 +1,33 @@
 .bottom {
   display: flex;
-  height: 34vh;
 
-  img {
-    flex: 2;
+  @media (max-width: 1000px) {
+    display: block;
+  }
+
+  .image {
+    flex: 1;
+    flex-shrink: 1;
+
+    @media (max-width: 1000px) {
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   .info {
-    flex: 3;
+    flex: 2;
+    flex-shrink: 5;
     align-self: center;
     padding: 0 3rem;
+
+    @media (max-width: 1000px) {
+      padding: 4rem 5vw;
+    }
 
     h1 {
       letter-spacing: 0.5rem;
