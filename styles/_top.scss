@@ -1,0 +1,82 @@
+.top {
+  display: flex;
+  height: 66vh;
+
+  .left {
+    flex: 4;
+    background-image: url(../images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-left: 3rem;
+
+    nav {
+      color: white;
+      font-weight: 600;
+      ul {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        li {
+          list-style: none;
+          cursor: pointer;
+
+          &:nth-child(1) {
+            margin-right: 2rem;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 3;
+    padding: 6rem 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      margin-top: 2rem;
+      line-height: 2;
+      color: $darkGrey;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      letter-spacing: 0.7rem;
+      align-self: flex-start;
+      cursor: pointer;
+
+      span {
+        margin-right: 1rem;
+        font-size: 1rem;
+      }
+    }
+
+    .controls {
+      height: 4rem;
+      width: 8rem;
+      background-color: #000;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
