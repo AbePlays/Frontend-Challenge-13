@@ -108,6 +108,42 @@
   cursor: pointer;
 }
 
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 34vh;
+}
+
+.bottom img {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.bottom .info {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 3rem;
+}
+
+.bottom .info h1 {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.bottom .info p {
+  margin-top: 1rem;
+  color: #a1a1a1;
+  line-height: 1.5;
+  font-size: 0.7rem;
+}
+
 *,
 *::before,
 *::after {

@@ -1,0 +1,27 @@
+.bottom {
+  display: flex;
+  height: 34vh;
+
+  img {
+    flex: 2;
+  }
+
+  .info {
+    flex: 3;
+    align-self: center;
+    padding: 0 3rem;
+
+    h1 {
+      letter-spacing: 0.5rem;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    p {
+      margin-top: 1rem;
+      color: $darkGrey;
+      line-height: 1.5;
+      font-size: 0.7rem;
+    }
+  }
+}
