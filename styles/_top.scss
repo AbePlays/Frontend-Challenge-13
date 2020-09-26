@@ -10,16 +10,21 @@
     background-image: url(../images/desktop-image-hero-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 3rem;
-    padding-left: 3rem;
 
     @media (max-width: 1000px) {
       height: 400px;
     }
 
-    nav {
+    .desktop {
       color: white;
       font-weight: 600;
+      padding-top: 3rem;
+      padding-left: 3rem;
+
+      @media (max-width: 1000px) {
+        display: none;
+      }
+
       ul {
         display: flex;
         gap: 2rem;
@@ -46,6 +51,46 @@
               right: 0;
               position: absolute;
             }
+          }
+        }
+      }
+    }
+
+    .mobile {
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      position: relative;
+
+      @media (min-width: 1000px) {
+        display: none;
+      }
+
+      img {
+        object-fit: contain;
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        position: absolute;
+        align-self: center;
+        left: 45%;
+      }
+
+      ul {
+        display: none;
+
+        li {
+          list-style: none;
+          cursor: pointer;
+          color: black;
+
+          &:not(:last-child) {
+            margin-right: 1rem;
           }
         }
       }
