@@ -4,6 +4,12 @@
   display: flex;
 }
 
+@media (min-width: 1000px) {
+  .top {
+    height: 64vh;
+  }
+}
+
 @media (max-width: 1000px) {
   .top {
     display: block;
@@ -17,6 +23,7 @@
   background-image: url(../images/desktop-image-hero-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 1000px) {
@@ -218,6 +225,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 1000px) {
+  .bottom {
+    height: 36vh;
+  }
 }
 
 @media (max-width: 1000px) {

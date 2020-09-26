@@ -1,6 +1,10 @@
 .bottom {
   display: flex;
 
+  @media (min-width: 1000px) {
+    height: 36vh;
+  }
+
   @media (max-width: 1000px) {
     display: block;
   }
